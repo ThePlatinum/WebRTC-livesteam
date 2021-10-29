@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <meta charset="UTF-8" />
+    <meta name="description" content="WebRTC Broadcast">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
+    <meta itemprop="description" content="Client-side WebRTC Broadcast">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" href="/vicon.png">
+
+    <base target="_blank">
+    <title>Broadcast</title>
+    <link href="/styles.css" rel="stylesheet" />
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
+    <script src="/peerjs.min.js"></script>
+  </head>
+  <body>
+    <div id="loginCont">
+
+      <label for="username">User</label>
+      <input id="user" placeholder="Control-Gaming Admin" type="text" disabled></input>
+      
+      <label for="password">Password</label>
+      <input id="password" type="password"></input>
+      
+      <div class="center"><button id="btnLogin">Login</button></div>
+    </div>
+
+    <div id="broadcast">
+      <div>
+        <video playsinline muted autoplay id="webcamVideo"></video>
+      </div>
+      
+        <section class="select" id='show' onload="document.getElementById('show').style.display='block' ">
+          <label for="audioSource">Select Audio Source </label>
+          <select id="audioSource"></select>
+        </section>
+
+        <section class="select">
+          <label for="videoSource">Select Video source</label>
+          <select id="videoSource"></select>
+        </section>
+
+        <section class="select">
+          <label for="bitRateSelect">Select BitRate</label>
+          <select id="bandwidth">
+            <option value="unlimited" selected>unlimited</option>
+            <option value="2000">2000</option>
+            <option value="1000">1000</option>
+            <option value="500">500</option>
+            <option value="250">250</option>
+            <option value="125">125</option>
+          </select>
+        </section>
+        
+      <div class="center">
+        <button id="btnStart">Start Broadcast</button>
+        <button id="btnStop">End Broadcast</button>
+      </div>
+  
+      <div class="center">
+        <p>How to use: Select the OBS Studio as video source first and hit the 'Start Broadcast' button. </br> Start OBS as a virtual Camera</p>
+      </div>
+    </div>
+    
+    <script src="/broadcast.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Broadcast Viewer">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
+    <meta itemprop="description" content="Broadcast Viewer">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta id="theme-color" name="theme-color" content="#fffff">
+    <link rel="icon" href="/128x128_ctrl_q0u_icon.ico">
+
+    <base target="_blank">
+    <title>Viewer</title>
+    <link href="/styles.css" rel="stylesheet" />
+    
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
+    <script src="/peerjs.min.js"></script>
+  </head>
+  <body class="b_body">	
+	<noscript>
+    	<style type="text/css">
+        	.pagecontainer {display:none;}
+    	</style>
+    	<div class="noscriptmsg">
+    		You don't have javascript enabled.  Good luck with that.
+    	</div>
+	</noscript>
+
+    <!--<div id="bar">
+      <img src='./logo.png' height="15px" /> control-gaming.eu
+    </div>-->
+
+    
+    <video class="v_center" playsinline autoplay id="remoteVideo" controls></video>
+    <script src="/watch.js"></script>
+    
+
+  </body>
+
+</html>

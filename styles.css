@@ -1,0 +1,109 @@
+html {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	color: white;
+}
+
+.v_center{
+    margin-left: auto;
+    margin-right: auto;
+    /*display: block;*/
+	  width: 100%;
+    max-height: 100%;
+}
+
+  video {
+    align-content: center;
+    align-self: center;
+  }
+
+.b_body{
+    position: absolute;
+    margin: 0px;
+    overflow: hidden;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;	
+}
+
+
+
+@media (min-aspect-ratio: 9/16) {
+  body {
+        background-image    : url("./background4k.png");
+      }
+    }
+
+
+@media (min-aspect-ratio: 21/9) {
+  body {
+        background-image    : url("./background4k21.png");
+      }
+    }
+
+
+body {
+
+      background-size     : cover;
+      background-repeat   : no-repeat;
+      background-color: black;
+    }
+	
+
+
+  #bar{
+    background-color: darkgray;
+    width: 100%;
+    padding: 5px;
+  }
+
+  button{
+      margin: 1rem;
+      align-self: center;
+      text-align: center;
+      text-decoration: none;
+      font-size: 18px;
+      background-color: whitesmoke;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      padding: 0.5rem;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #loginCont {
+    margin: 0px 15%;
+    padding: 2rem;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+    margin-top: 20vh;
+  }
+  
+  input[type=text], input[type=password], select {
+    width: 100%;
+    padding: 7px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 18px;
+  }
+
+  section{
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+
+  #loginCont label{
+    font-size: 18px;
+  }
+
+  img{
+    margin: 0.5rem;
+  }

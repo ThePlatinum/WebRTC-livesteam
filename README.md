@@ -1,2 +1,2 @@
 # WebRTC-livesteam
-A livestreeam page for control-gaming.eu
+Livestreeam broadcast and receiver using webRtc and firebase
